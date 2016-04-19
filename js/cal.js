@@ -118,13 +118,48 @@ g48=parseFloat(g40)+parseFloat(g41)+parseFloat(g43)+parseFloat(g44)+parseFloat(g
 
 $('#g48').html(g48);
 
+h40=(g40*100/g36).toFixed(0);
+h41=(g41*100/g36).toFixed(0);
+h43=(g43*100/g36).toFixed(0);
+h44=(g44*100/g36).toFixed(0);
 
+h45=(g45*100/g36).toFixed(0);
 
+h46=(g46*100/g36).toFixed(0);
+$('#h40').html(h40 +"%");
+$('#h41').html(h41+"%" );	
+$('#h43').html(h43+"%" );
+$('#h44').html(h44 +"%");
+$('#h45').html(h45+"%");
+$('#h46').html(h46+"%");
 
+g50=g36-g48;
 
+$('#g50').html(g50);
+d19=parseFloat($('#ltvpercent2').autoNumeric('get'));
 
+f19=360;
 
-
-
+e52=(PMT(d19/1200,f19,(-1)*loan).toFixed(0));
+$('#e52').html(e52);
+f52=parseFloat($('#f52').autoNumeric('get'));
+g52=-1*(e52*f52);
+g53=parseFloat($('#f52').autoNumeric('get'));
+$('#g52').html(g52);
+g55=g50+g52+g53;
+$('#g55').html(g55);
+f60=(g50*100/totalprice).toFixed(1);
+$('#f60').html(f60 + " %");
+f61=(-1*(g50/g52)).toFixed(2);
+$('#f61').html(f61 + " %");
+j28=parseFloat($('#periodassumed').autoNumeric('get'));
+e26=cashinvested;
+f63=(g55*100/(e26*j28)).toFixed(2);
+f62=(g55*1200/(e26*j28)).toFixed(2);
+$('#f63').html(f63 + " %");
+$('#f62').html(f62 + " %");
 pauseCounting();
+}
+ function PMT(i, n, p) {
+ return i * p * Math.pow((1 + i), n) / (1 - Math.pow((1 + i), n));
 }

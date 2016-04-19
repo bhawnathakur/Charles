@@ -1,4 +1,4 @@
-<html lang="en"><head>
+ <html lang="en"><head>
     <meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
@@ -142,7 +142,7 @@ jQuery(function($) {
       <td width="37%" bgcolor="#CCC0DA"><input type="text" id="purchaseprice" value="100000" style="width:100px;background: transparent;font-size:12px" data-a-sign="$" data-v-max="999999999" data-v-min="0" class=" auto inpt2"></td>
     </tr>
     <tr>
-      <td>Loan (LTV)* <input type="text" id="ltvpercent1" value="80" style="width:50px;background: transparent;font-size:12px" data-p-sign="s" data-a-sign="%" data-v-max="100" data-v-min="0" class=" auto inpt2"></td>
+      <td>Loan (LTV)* <input type="text" id="ltvpercent1" value="80" style="width:50px;background: transparent;font-size:12px" data-p-sign="s" data-a-sign="%" data-v-max="100" data-v-min="0" class=" auto inpt2"> <input type="text" id="ltvpercent2" value="5.50" style="width:50px;background: transparent;font-size:12px" data-p-sign="s" data-a-sign="%" data-v-max="100" data-v-min="0.00" class=" auto inpt2"></td>
       <td bgcolor="#CCC0DA"><span style="margin-left:5px;" id="loan">$80000</span></td>
     </tr>
     <tr>
@@ -221,7 +221,7 @@ jQuery(function($) {
      </div>
   </div>
    <div id="" class="row">
-     <div style="margin-top:10px; background-color:#E7E7E7" class="col-sm-12"><table width="95%" border="1">
+     <div style="margin-top:10px; background-color:#E7E7E7" class="col-sm-12"><table width="95%" border="1" cellpadding="5">
   <tbody>
     <tr bgcolor="#C2D69A" align="center">
       <td width="25%">&nbsp;</td>
@@ -239,7 +239,13 @@ jQuery(function($) {
       <td bgcolor="#CCC0DA">&nbsp;</td>
       <td bgcolor="#CCC0DA">&nbsp;</td>
       <td bgcolor="#CCC0DA">&nbsp;</td>
-      <td>&nbsp;</td>
+      <td rowspan="5" align="center" valign="top" bgcolor="#FFFFFF"> <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>monthly rent X 12<br>
+          <br>
+          </p>
+        <p>EGI / Revenue</p></td>
       <td bgcolor="#FCD5B4" align="center">Water/Sewer</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k33" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"> </td>
       </tr>
@@ -248,8 +254,7 @@ jQuery(function($) {
       <td bgcolor="#CCC0DA"><input type="text" id="e33" value="1000" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0" class=" auto inpt2"></td>
       <td bgcolor="#CCC0DA"><input type="text" id="f33" value="12" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-v-min="0" class=" auto inpt2"></td>
       <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="g33">12000</span>&nbsp;</td>
-      <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="h33">102 %</span></td>
-      <td>&nbsp;</td>
+      <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="h33"></span></td>
       <td bgcolor="#FCD5B4" align="center">Garbage</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k34" value="10" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
@@ -259,7 +264,6 @@ jQuery(function($) {
       <td bgcolor="#CCC0DA"><input type="text" id="f34" value="0" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-v-min="0" class=" auto inpt2"></td>
       <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="g34">0</span></td>
       <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="h34">0 %</span></td>
-      <td>&nbsp;</td>
       <td bgcolor="#FCD5B4" align="center">Natural Gas / Heating Gas</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k35" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
@@ -269,7 +273,6 @@ jQuery(function($) {
       <td bgcolor="#CCC0DA"><input type="text" id="f35" value="2.0" style="width:50px;background: transparent;font-size:12px" data-p-sign="s" data-a-sign=" %" data-v-max="100" data-v-min="0.0" class=" auto inpt2"></td>
       <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="g35">240</span></td>
       <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="h35">-2 %</span></td>
-      <td>&nbsp;</td>
       <td bgcolor="#FCD5B4" align="center">Electricity</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k36" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
@@ -279,7 +282,6 @@ jQuery(function($) {
       <td bgcolor="#CCC0DA">&nbsp;</td>
       <td bgcolor="#CCC0DA"><strong><span style="margin-left:5px" id="g36"></span> </strong></td>
       <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="h36"> 100%</span></td>
-      <td>&nbsp;</td>
       <td bgcolor="#FCD5B4" align="center">Legal</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k37" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
@@ -289,8 +291,16 @@ jQuery(function($) {
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td width="115" bgcolor="#FCD5B4" align="center">Accounting&nbsp;&nbsp;</td>
+      <td rowspan="8" align="center" valign="top" bgcolor="#FFFFFF"><p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>Real Value * Real Tax Rate</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>landlord Insurance</p>
+        <p>Funds set aside for periodic maintenance</p>
+        <p>&nbsp;</p></td>
+      <td width="19%" bgcolor="#FCD5B4" align="center">Accounting&nbsp;&nbsp;</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k38" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
     <tr>
@@ -299,68 +309,61 @@ jQuery(function($) {
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td width="115" bgcolor="#FCD5B4" align="center">Supplies</td>
+      <td width="19%" bgcolor="#FCD5B4" align="center">Supplies</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k39" value="15" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
     <tr>
       <td>Repair &amp; Maintenance</td>
       <td><input class=" auto inpt2" type="text" id="e40" value="65" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
-      <td>&nbsp;</td>
       <td><input type="text" id="f40" value="12" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-v-min="0" class=" auto inpt2"></td>
-      <td><span style="margin-left:5px" id="g40"></span> </td>
-      <td>&nbsp;</td>
+      <td><span style="margin-left:5px" id="g40"></span></td>
+      <td><span style="margin-left:5px" id="h40"></span></td>
       <td bgcolor="#FCD5B4" align="center">Advertising</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k40" value="10" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
     <tr>
       <td>Utilties***</td>
       <td><span style="margin-left:5px" id="e41"> </span>
-       </td>
-      <td>&nbsp;</td>
+      </td>
       <td><input type="text" id="f41" value="12" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-v-min="0" class=" auto inpt2"></td>
-      <td><span style="margin-left:5px" id="g41"></span> </td>
-      <td>&nbsp;</td>
+      <td><span style="margin-left:5px" id="g41"></span></td>
+      <td><span style="margin-left:5px" id="h41"></span></td>
       <td bgcolor="#FCD5B4" align="center">Licenses</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k41" value="5" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
     <tr>
       <td>Real Estate Tax</td>
       <td><span style="margin-left:5px" id="e43"> </span></td>
-      <td>&nbsp;</td>
       <td><input type="text" id="f43" value="1" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-a-sign=" %" data-p-sign="s" data-v-min="0.0" class=" auto inpt2"></td>
-      <td><span style="margin-left:5px" id="g43"></span> </td>
-      <td>&nbsp;</td>
+      <td><span style="margin-left:5px" id="g43"></span></td>
+      <td><span style="margin-left:5px" id="h43"></span></td>
       <td bgcolor="#FCD5B4" align="center">HOA / Condo Fees</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k42" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
     <tr>
       <td>Insurance</td>
       <td><input type="text" id="e44" value="55" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0" class=" auto inpt2"></td>
-      <td>&nbsp;</td>
       <td><input  class=" auto inpt2" type="text" id="f44" value="12" style="width:50px;background: transparent;font-size:12px" data-v-max="99999" data-v-min="0"></td>
-      <td><span style="margin-left:5px" id="g44"></span> </td>
-      <td>&nbsp;</td>
+      <td><span style="margin-left:5px" id="g44"></span></td>
+      <td><span style="margin-left:5px" id="h44"></span></td>
       <td bgcolor="#FCD5B4" align="center">Pest Control</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k43" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
     <tr>
       <td>Management Fees</td>
       <td><span style="margin-left:5px" id="e45"> </span></td>
-      <td>&nbsp;</td>
       <td><input type="text" id="f45" value="10" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-a-sign=" %" data-p-sign="s" data-v-min="10.0" class=" auto inpt2"></td>
-      <td><span style="margin-left:5px" id="g45"></span> </td>
-      <td>&nbsp;</td>
+      <td><span style="margin-left:5px" id="g45"></span></td>
+      <td><span style="margin-left:5px" id="h45"></span></td>
       <td bgcolor="#FCD5B4" align="center">Lawn</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k44" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
     <tr>
       <td>Replacement  Reserves</td>
       <td><span style="margin-left:5px" id="e46"> </span></td>
-      <td>&nbsp;</td>
       <td><input type="text" id="f46" value="0" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-a-sign=" %" data-p-sign="s" data-v-min="0.0" class=" auto inpt2"></td>
       <td><span style="margin-left:5px" id="g46"></span></td>
-      <td>&nbsp;</td>
+      <td><span style="margin-left:5px" id="h46"></span></td>
       <td bgcolor="#FCD5B4" align="center">Telephone</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k45" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
@@ -370,7 +373,7 @@ jQuery(function($) {
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
       <td bgcolor="#FCD5B4" align="center">Pool</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k46" value="0" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
@@ -380,7 +383,7 @@ jQuery(function($) {
       <td>&nbsp;</td>
       <td><strong><span style="margin-left:5px" id="g48"></span></strong></td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
       <td bgcolor="#FCD5B4" align="center">Elevator</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k47" value="10" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
@@ -390,17 +393,17 @@ jQuery(function($) {
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
       <td bgcolor="#FCD5B4" align="center">Snow Removal</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k48" value="10" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
     <tr>
+      <td><strong>NOI - Net Operating Income</strong></td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td><strong><span style="margin-left:5px" id="g50"></span></strong></td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td align="center" bgcolor="#FFFFFF"> also called EBITDA</td>
       <td bgcolor="#FCD5B4" align="center">Misc. / Others</td>
       <td bgcolor="#FCD5B4"><input class=" auto inpt2" type="text" id="k49" value="10" style="width:100px;background: transparent;font-size:12px" data-v-max="999999999" data-v-min="0"></td>
       </tr>
@@ -410,16 +413,45 @@ jQuery(function($) {
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
+      <td align="center" bgcolor="#FFFFFF">&nbsp;</td>
       <td bgcolor="#FCD5B4" align="center">&nbsp;</td>
       <td bgcolor="#FCD5B4">&nbsp;</td>
       </tr>
     <tr>
+      <td> DS (Debt Service)</td>
+      <td><span style="margin-left:5px" id="e52"></span></td>
+      <td><input type="text" id="f52" value="12" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-v-min="0" class=" auto inpt2"></td>
+      <td><span style="margin-left:5px" id="g52">
+        
+      </span></td>
+      <td>&nbsp;</td>
+      <td rowspan="4" align="center" bgcolor="#FFFFFF">Principle + Interest</td>
+      <td bgcolor="#FCD5B4" align="center">&nbsp;</td>
+      <td bgcolor="#FCD5B4">&nbsp;</td>
+      </tr>
+      <tr>
+      <td>Cap Exp / Other</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><input type="text" id="g53" value="0" style="width:50px;background: transparent;font-size:12px" data-v-max="100" data-v-min="0" class=" auto inpt2"></td>
+      <td>&nbsp;</td>
+      <td bgcolor="#FCD5B4" align="center">&nbsp;</td>
+      <td bgcolor="#FCD5B4">&nbsp;</td>
+      </tr>
+      <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
+      <td bgcolor="#FCD5B4" align="center">&nbsp;</td>
+      <td bgcolor="#FCD5B4">&nbsp;</td>
+      </tr>
+      <tr>
+      <td> <strong>NI - Net Income </strong></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td><strong><span style="margin-left:5px" id="g55"></span></strong></td>
       <td>&nbsp;</td>
       <td bgcolor="#FCD5B4" align="center">&nbsp;</td>
       <td bgcolor="#FCD5B4">&nbsp;</td>
@@ -429,6 +461,64 @@ jQuery(function($) {
 
      </div>
     </div>
+  
+  
+  
+  <div id="" class="row">
+     <div style="margin-top:10px; background-color:#E7E7E7" class="col-sm-12">
+     <table width="100%" border="1">
+  <tbody>
+    <tr>
+      <td width="48%"><strong>Ratios</strong></td>
+      <td width="52%">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><table width="100%" border="1">
+        <tbody>
+          <tr>
+            <td width="44%"> <strong>CAP RATE</strong></td>
+            <td width="13%">&nbsp;</td>
+            <td width="17%">&nbsp;</td>
+            <td width="26%" bgcolor="#CCC0DA"><span style="margin-left:5px" id="f60"></span></td>
+          </tr>
+          <tr>
+            <td> DCR (Debt Coverage Ratio)</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="f61"></span></td>
+          </tr>
+          <tr>
+            <td> ROI - Annual (return on investment) *</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="f62"></span></td>
+          </tr>
+          <tr>
+            <td> ROI - Per Month</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td bgcolor="#CCC0DA"><span style="margin-left:5px" id="f63"></span></td>
+          </tr>
+        </tbody>
+      </table></td>
+      <td valign="top" bgcolor="#ffffff"> <p>( NOI / TotPrice incl rehab/up front $)</p>
+        <p> ( NOI / Debt Service)</p>
+        <p> ( NI / Cash Invested -Annualized)</p></td>
+    </tr>
+    <tr>
+      <td style="padding-left:20px; font-size:"><p>** If refinancing after purchase, then enter total price incl rehab,close,etc costs</p>
+        <a href="http://www.propertymetrics.com/blog/2014/07/24/understanding-replacement-reserves-in-commercial-real-estate ">http://www.propertymetrics.com/blog/2014/07/24/understanding-replacement-reserves-in-commercial-real-estate</a> <br>
+        </td>
+      <td>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+     
+     </div>
+    </div>
+     
+     
   
 </div>
 	
