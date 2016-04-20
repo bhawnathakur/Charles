@@ -22,6 +22,14 @@
 	
     <script>
 	$( document ).ready(function() {
+		$('input').keyup(
+		
+		function(){
+		doCount();
+		
+			
+		}
+		)
 		var fortnightAway = new Date(+new Date),
     date = fortnightAway.getDate(), 
     month = "January,February,March,April,May,June,July,August,September,October,November,December"
